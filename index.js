@@ -27,6 +27,8 @@ app.use((req, res, next) => {
   next();
 });
 app.use(cookieParser(process.env.ACCESS_COOKIE_SECRET));
+app.use(express.static(path.resolve(__dirname + '/public')));
+
 // ------- routes -----
 app.use(require(path.resolve(__dirname, 'src', 'routes', 'RegisterRoute.js')));
 app.use(require(path.resolve(__dirname, 'src', 'routes', 'LoginRoute.js')));
