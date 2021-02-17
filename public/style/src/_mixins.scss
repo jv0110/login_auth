@@ -1,0 +1,13 @@
+@mixin align_y(){
+  display: flex;
+  align-items: center;
+}
+@mixin align_x(){
+  display: flex;
+  justify-content: center;
+}
+@mixin align_z(){
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

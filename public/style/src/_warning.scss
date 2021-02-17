@@ -1,0 +1,16 @@
+.warning{
+  font-weight: 600;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  text-align: center;
+  color: #FFFFFF;
+  &.error{
+    background-color: $warning-err-red-light;
+    border: 2px solid $warning-err-red-darker;
+  }
+  &.success{
+    background-color: #0E7D8C;
+  }
+}

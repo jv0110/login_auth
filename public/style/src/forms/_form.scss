@@ -1,0 +1,53 @@
+.container{
+  overflow: hidden;
+  padding: 16px 10px;
+  @media screen and (min-width: 768px){
+    border-radius: 6px;
+    padding: 0 10px;
+  }
+  .form{
+    padding: 30px;
+    border-right: 1px solid #e2e2e2;
+    background-color: #FFFFFF;
+    .form-header{
+      text-align: center;
+      .logo{
+        max-width: 120px;
+        display: block;
+        margin: 0 auto;
+      }
+      .heading{
+        font-weight: 700;
+      }
+    }
+    label{
+      font-weight: 700;
+    }
+    input{
+      padding: 12px;
+    }
+    .text{
+      text-align: right;
+      a{
+        color: #350234;
+        font-weight: 700;
+      }
+    }
+    .btn{
+      background-color: #0D8290;
+      color: #FFFFFF;
+      font-weight: 700;
+      &:hover{
+        background-color: #350234;
+      }
+    }
+  }
+  .img-container.illustrate{
+    @include align_y();
+    background-color: #FFFFFF;
+    img{
+      max-width: 100%;
+      object-fit: cover;
+    }
+  }
+}
