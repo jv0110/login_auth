@@ -1,0 +1,17 @@
+<% if(typeof errors !== 'undefined'){ %>
+  <% errors.forEach(error => { %>
+    <p class="warning">
+      <%= error.msg %>
+    </p>
+  <% }); %>
+<% } %>
+<% if(typeof success_msg !== 'undefined') { %>
+  <p class="warning">
+    <%= success_msg %>
+  </p>
+<% } %>
+<% if(typeof error_msg !== 'undefined') { %>
+  <p class="warning">
+    <%= error_msg %>
+  </p>
+<% } %>
